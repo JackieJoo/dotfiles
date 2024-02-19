@@ -45,7 +45,7 @@ PATH="$GOPATH/bin:$PATH"
 # Turso
 export PATH="/Users/jackiejo/.turso:$PATH"
 
-alias ls='colorls'
+alias ls='arch -x86_64 colorls'
 # bindkey '^I' autosuggest-accept
 
 # pnpm

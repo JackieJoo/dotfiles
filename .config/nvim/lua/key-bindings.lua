@@ -15,6 +15,7 @@ vim.cmd("set linebreak")
 -- Be useful <enter> key!:
 -- vim.cmd([[nnoremap <silent> <cr> :let searchTerm = '\v<'.expand("<cword>").'>' <bar> let @/ = searchTerm <bar> echo '/'.@/ <bar> call histadd("search", searchTerm) <bar> set hls<cr>
 -- ]])
+-- vim.g.copilot_assume_mapped = true
 
 -- vim.cmd("nnoremap <silent> <c-c> :if (&hlsearch == 1) \| set nohlsearch \| else \| set hlsearch \| endif<cr>")
 vim.g.mapleader = " "

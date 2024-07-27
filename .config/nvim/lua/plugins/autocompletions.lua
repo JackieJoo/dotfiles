@@ -68,4 +68,22 @@ return {
       }
     end
   },
+  {
+    "jcha0713/classy.nvim",
+    config = function()
+      require("classy").setup({
+        -- these are the default values
+        use_double_quote = true,
+        insert_after_remove = false,
+        move_cursor_after_remove = true,
+      });
+      -- example keymaps
+      vim.keymap.set('n', "<leader>ac", ':ClassyAddClass<CR>', { desc = '[A]dd [C]lass' })
+      vim.keymap.set('n', "<leader>dc", ':ClassyRemoveClass<CR>', { desc = '[D]elete [C]lass' })
+      vim.keymap.set('n', "<leader>rc", ':ClassyResetClass<CR>', { desc = '[R]eset [C]lass' })
+      -- nmap('<leader>ac', require("classy").add_class, '[A]dd [C]lass')
+      -- nmap('<leader>dc', require("classy").remove_class, '[D]elete [C]lass')
+      -- nmap('<leader>rc', require("classy").reset_class, '[R]eset [C]lass')
+    end,
+  }
 }
